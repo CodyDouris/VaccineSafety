@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1" name="viewport">
+        <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+        <meta name="description" content="Information about any adverse events following immunization (AEFI) that individuals have reported after receiving a COVID-19 vaccine in Canada. These adverse events are not necessarily related to the vaccine.">
+        <meta name="keywords" content="coronavirus, covid-19, pandemic, Canada, vaccines covid, vaccines canada, vaccines covid, coronavirus vaccines, safety, side effects, adverse reaction, AEFI">
+        <meta name="author" content="Public Health Agency of Canada">
+        <meta name="dcterms.title" content="COVID-19 vaccine safety: Summary of weekly report on side effects following immunization">
+        <meta name="dcterms.description" content="Information about any adverse events following immunization (AEFI) that individuals have reported after receiving a COVID-19 vaccine in Canada. These adverse events are not necessarily related to the vaccine.">
+        <meta name="dcterms.creator" content="Public Health Agency of Canada">
+        <meta name="dcterms.language" title="ISO639-2/T" content="eng">
+        <meta name="dcterms.subject" title="gccore" content="HE Health and Safety">
+        <meta name="dcterms.issued" title="W3CDTF" content="2021-01-08">
+        <meta name="dcterms.modified" title="W3CDTF" content="2021-01-29">
+        <meta name="dcterms.spatial" content="Canada">
+        <meta name="dcterms.type" content="datasets;statistics;education and awareness">
+        <meta name="dcterms.source" content="aem">
+        <meta name="dcterms.identifier" content="Public_Health_Agency_of_Canada">
+        <meta prefix="fb: https://www.facebook.com/2008/fbml" property="fb:pages" content="378967748836213, 160339344047502, 184605778338568, 237796269600506, 10860597051, 14498271095, 209857686718, 160504807323251, 111156792247197, 113429762015861, 502566449790031, 312292485564363, 1471831713076413, 22724568071, 17294463927, 1442463402719857, 247990812241506, 730097607131117, 1142481292546228, 1765602380419601, 131514060764735, 307780276294187, 427238637642566, 525934210910141, 1016214671785090, 192657607776229, 586856208161152, 1146080748799944, 408143085978521, 490290084411688, 163828286987751, 565688503775086, 460123390028, 318424514044, 632493333805962, 370233926766473, 173004244677, 1562729973959056, 362400293941960, 769857139754987, 167891083224996, 466882737009651, 126404198009505, 135409166525475, 664638680273646, 169011506491295, 217171551640146, 182842831756930, 1464645710444681, 218822426028, 218740415905, 123326971154939, 125058490980757, 1062292210514762, 1768389106741505, 310939332270090, 285960408117397, 985916134909087, 655533774808209, 1522633664630497, 686814348097821, 230798677012118, 320520588000085, 103201203106202, 273375356172196, 61263506236, 353102841161, 1061339807224729, 1090791104267764, 395867780593657, 1597876400459657, 388427768185631, 937815283021844, 207409132619743, 1952090675003143, 206529629372368, 218566908564369, 175257766291975, 118472908172897, 767088219985590, 478573952173735, 465264530180856, 317418191615817, 428040827230778, 222493134493922, 196833853688656, 194633827256676, 252002641498535, 398018420213195, 265626156847421, 202442683196210, 384350631577399, 385499078129720, 178433945604162, 398240836869162, 326182960762584, 354672164565195, 375081249171867, 333050716732105, 118996871563050, 240349086055056, 119579301504003, 185184131584797, 333647780005544, 306255172770146, 369589566399283, 117461228379000, 349774478396157, 201995959908210, 307017162692056, 145928592172074, 122656527842056">
+
+        <title>COVID-19 vaccine safety: Summary of weekly report on side effects following immunization - Canada.ca</title>
+
+        <link rel="apple-touch-icon" sizes="57x57 72x72 114x114 144x144 150x150" class="wb-favicon" href="/src/GCWeb/assets/favicon-mobile.png">
+        <link href="/src/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" class="wb-init wb-favicon-inited">
+
+        <link href="/src/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="/src/css/font-awesome.css">
+        <link rel="stylesheet" href="/src/GCWeb/css/wet-boew.min.css">
+        <link rel="stylesheet" href="/src/GCWeb/css/theme.min.css">
+
+        <noscript>
+            <link rel="stylesheet" href="/src/wet-boew/css/noscript.min.css" />
+        </noscript>
+
+        <style type="text/css">
+            #bigGraph {
+                font-size: 0.7em;
+            }
+
+            .circle {
+                display: inline-block;
+                float: left;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin: 0 5px;
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+            .selection {
+                -webkit-user-select: none;
+                /* Safari */
+                -moz-user-select: none;
+                /* Firefox */
+                -ms-user-select: none;
+                /* IE10+/Edge */
+                user-select: none;
+                /* Standard */
+                margin: 0 1px;
+                position: relative;
+                width: 150px;
+                height: 40px;
+                font-size: 1em;
+                border: solid 2px rgba(150, 150, 150, 0.2);
+                cursor: pointer;
+            }
+
+            .selection p {
+                line-height: 20px;
+                margin-left: 22px;
+                display: inline;
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+            .selection:hover {
+                background-color: rgba(150, 150, 150, 0.2);
+            }
+
+            #displayPanel {
+                width: 100%;
+                display: -ms-grid;
+                display: grid;
+                -ms-grid-columns: 150px 1fr;
+                grid-template-columns: 150px auto;
+            }
+
+            #logPanel {
+                -ms-grid-column: 1;
+                -ms-grid-row: 1;
+                padding-bottom: 5px;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            #logPanel button {
+                height: 35px;
+                margin: 0;
+            }
+
+            #descPanel {
+                -ms-grid-column: 2;
+                -ms-grid-row: 1;
+            }
+
+            #descPanel p {
+                line-height: 20px;
+                font-size: 0.9em;
+                margin: 0;
+                text-align: center;
+            }
+
+            #descPanel span {
+                font-weight: bold;
+            }
+
+            #btnPanel {
+                -ms-grid-column-span: 2;
+                -ms-grid-row: 3;
+                grid-column: span 2;
+                padding: 0;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #graphPanel {
+                -ms-grid-column: 1;
+                -ms-grid-column-span: 2;
+                -ms-grid-row: 2;
+                grid-column: span 2;
+                grid-row: 2/3;
+                width: 100%;
+            }
+
+            #big {
+                width: 100%;
+                height: 300px;
+            }
+
+            #big .tick text {
+                font-size: 1.1em;
+            }
+
+            .tab {
+                overflow: hidden;
+                background-color: white;
+                color: #295376;
+            }
+
+            /* Style the buttons inside the tab */
+
+            .tab button {
+                background-color: inherit;
+                /*float: left;*/
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 2px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+                color: #295376;
+            }
+
+            /* Change background color of buttons on hover */
+
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            .tab button:focus {
+                border: 1px solid black;
+            }
+
+            /* Create an active/current tablink class */
+
+            .tab button.active {
+                background-color: #ccc;
+            }
+
+            /* Style the tab content */
+
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border-top: none;
+            }
+
+            .bar {
+                fill: #015B7E;
+                stroke: #015B7E;
+            }
+
+            .axis {
+                stroke: #D8D8D8;
+            }
+
+            text {
+                /* fill: #6c686f; */
+                fill: black;
+            }
+
+            .tick>line,
+            .domain {
+                stroke: #ccc;
+            }
+
+            .x-axis-title,
+            .y-axis-title {
+                font-size: 0.8em;
+            }
+
+            .x-axis .tick line {
+                stroke: black;
+            }
+
+            .x-axis,
+            .y-axis {
+                font-size: 12px;
+            }
+
+            label {
+                display: inline;
+            }
+
+            .line {
+                fill: none;
+                stroke-width: 3px;
+            }
+
+            .chart rect {
+                stroke: black;
+                stroke-width: 0.09px;
+            }
+
+            /*dashboard */
+            #dashboard {
+                /*height: 90%;*/
+            }
+
+            /* Key numbers boxes */
+            .boxes {
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 1px;
+                padding-right: 1px;
+                height: 10%;
+                justify-content: center;
+            }
+
+
+            .boxes a,
+            .boxes a:visited,
+            .boxes a:focus {
+                flex: 0 0 30%;
+                border: 3px solid #ccc;
+                border-radius: 10px;
+                margin: 10px;
+                text-decoration: none;
+                color: black;
+            }
+
+            .boxes a:hover {
+                border: 3px solid #000;
+                border-radius: 10px;
+                box-shadow: 2px 2px;
+            }
+
+            .innerBox {
+                flex: 0 0 23%;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin-left: 0px;
+                margin-right: 3px;
+                text-decoration: none;
+                color: black;
+                margin-bottom: 5px;
+            }
+
+            .innerBox div {
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+
+            .boxes p {
+                font-size: 18px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            .boxes p.h2 {
+                font-size: 30px;
+                margin-top: 5px;
+            }
+
+            table {
+                border: 1.5px solid black;
+            }
+
+            td {
+                border: 1.5px solid black;
+                padding: 4px;
+            }
+
+            th {
+                border: 1.5px solid black;
+                padding: 5px;
+            }
+
+            .figureTable td {
+                border: 1.5px solid black;
+                padding: 0px;
+                padding-left: 4px;
+            }
+
+            .figureTable th {
+                border: 1.5px solid black;
+                padding: 0px;
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+
+            /*#box1 {*/
+            /*    color: rgb(77, 140, 158);*/
+            /*}*/
+
+            /*#box2 {*/
+            /*    color: rgb(216, 135, 46);*/
+            /*}*/
+
+            /*#box3 {*/
+            /*    color: rgb(128, 155, 40);*/
+            /*}*/
+
+            /*#box4 {*/
+            /*    color: rgb(84, 80, 134);*/
+            /*}*/
+
+
+            /* Graph Panels */
+            #graphArea {
+                /*text-align: center;*/
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .graphPanels {
+                flex: 0 0 47%;
+                margin: 10px;
+                text-decoration: none;
+                color: black;
+                margin-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+            }
+
+
+            #graphHospital text,
+            #graphHospitalBySex text {
+                font-size: 16px;
+            }
+
+            #probable-exposure .y-axis,
+            #probable-exposure .x-axis,
+            #probable-exposure #legend {
+                font-size: 16px;
+            }
+
+            td#ratetested {
+                min-width: 80px;
+            }
+
+            td#numtested {
+                min-width: 113px;
+            }
+
+            #full:disabled {
+                background-color: #cccccc;
+            }
+
+            @media only screen and (max-width: 800px) {
+
+                #probable-exposure .y-axis,
+                #probable-exposure .x-axis,
+                #probable-exposure #legend {
+                    font-size: 18px;
+                }
+
+                #hospitalization text {
+                    font-size: 18px;
+                }
+
+                .x-axis-title,
+                .y-axis-title {
+                    font-size: 1.1em !important;
+                }
+
+                .txtTotal {
+                    white-space: nowrap;
+                }
+
+                .boxes a:visited,
+                .boxes a:focus,
+                .boxes a:hover {
+                    flex: 0 0 37.5%;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    margin: 5px;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                .boxes p {
+                    font-size: 16px;
+                }
+            }
+
+            @media only screen and (max-width: 991px) {
+                .selection {
+                    border-radius: 0;
+                }
+
+                #big {
+                    height: 500px;
+                }
+
+                #btnPanel {
+                    -ms-grid-column-span: 2;
+                    -ms-grid-row: 3;
+                    grid-column: span 2;
+                }
+
+                #graphPanel {
+                    -ms-grid-column: 1;
+                    -ms-grid-column-span: 2;
+                    -ms-grid-row: 2;
+                    grid-column: span 2;
+                    grid-row: 2/3;
+                }
+
+                #mainImg {
+                    margin-bottom: 20px;
+                }
+
+                .textarea {
+                    margin-top: 20px;
+                }
+
+                #full,
+                #howto {
+                    display: none;
+                }
+
+                .innerBox,
+                .graphPanels {
+                    flex: 0 0 100%;
+                }
+            }
+
+            @media only screen and (min-width: 991px) {
+                .pathText {
+                    display: none;
+                }
+
+                .textarea {
+                    margin-top: 128px;
+                    height: 138px;
+                }
+            }
+
+            #graphHospitalBySex {
+                display: none;
+            }
+
+            @media only screen and (max-width: 525px) {
+                .selection {
+                    width: 180px;
+                    height: 50px;
+                }
+
+                .selection p {
+                    margin-left: 27px;
+                }
+
+                #big {
+                    height: 300px;
+                }
+
+                #descPanel {
+                    -ms-grid-column: 1;
+                    -ms-grid-column-span: 2;
+                    -ms-grid-row: 2;
+                    grid-column: span 2;
+                }
+
+                #logPanel {
+                    -ms-grid-column-span: 2;
+                    flex-wrap: wrap;
+                    grid-column: span 2;
+                }
+
+                #btnPanel {
+                    -ms-grid-row: 4;
+                }
+
+                #graphPanel {
+                    -ms-grid-row: 3;
+                    grid-column: span 2;
+                    grid-row: 3/4;
+                }
+
+                .btn-success,
+                .btn-info {
+                    margin: 5px 0px !important;
+                    width: 100% !important;
+                }
+            }
+
+            @media only screen and (max-width: 1690px) {
+
+                p.fsel,
+                h3.fsel {
+                    font-size: 1.1vw !important;
+                }
+
+                h1.fsel {
+                    font-size: 2vw !important;
+                }
+
+                .innerBox.fsel {
+                    margin-left: 2px;
+                    margin-right: 2px;
+                }
+
+                #full.fsel,
+                #howto.fsel,
+                #langToggle.fsel {
+                    font-size: 0.8vw;
+                }
+
+                .graphPanels.fsel {
+                    /*height: 40%!important;*/
+                    /*flex: 0 0 46%!important;*/
+                    margin: 2px !important;
+                }
+
+                #barDiv.fsel .axis text,
+                #barDiv.fsel .barText {
+                    font-size: 23px !important;
+                }
+
+                #trendData.fsel .trendX text,
+                #trendData.fsel .trendY text,
+                #trendData.fsel .xAxisTrendLabel,
+                #trendData.fsel yAxisTrendLabel,
+                #trendData2.fsel .trendX2 text,
+                #trendData2.fsel .trendY2 text,
+                #trendData2.fsel .xAxisTrendLabel2,
+                yAxisTrendLabel2 {
+                    font-size: 15px;
+                }
+
+                .graphPanelsText p.fsel {
+                    line-height: 3vh;
+                    font-size: 1.3vh !important;
+                }
+            }
+
+            @media only screen and (max-width: 1200px) {
+                .dropdown {
+                    /*height: 29px !important;*/
+                    font-size: 0.9em !important;
+                }
+            }
+
+            @media only screen and (max-width: 1000px) {
+
+                #full,
+                #howto,
+                #langToggle {
+                    margin-top: -10px !important;
+                }
+            }
+
+            .navbuttons {
+                padding: 0px;
+            }
+
+            .navbuttons .btn-group {
+                padding: 20px 0px;
+            }
+
+            @media only screen and (max-width: 768px) {
+
+                .boxes a,
+                .boxes a:visited,
+                .boxes a:focus {
+                    flex: 0 0 100%;
+                    border: 3px solid #ccc;
+                    border-radius: 10px;
+                    margin: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                .navbuttons a {
+                    padding: 10px 0px !important;
+                    /*font-size:16px !important;*/
+                }
+            }
+        </style>
+    </head>
+
+    <body vocab="http://schema.org/" typeof="WebPage">
+        <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+        <script>
+            dataLayer1 = [];
+        </script>
+        <script>
+            dataLayer = [];
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TN3RPZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-TN3RPZ');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+        <noscript><iframe title="Google Tag Manager" src="//www.googletagmanager.com/ns.html?id=GTM-TLGQ9K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>
+            (function(w, d, s, l, i) { w[l] = w[l] || [];
+                w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer1' ? '&l=' + l : '';
+                j.async = true;
+                j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer1', 'GTM-TLGQ9K');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <ul id="wb-tphp">
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+            </li>
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+            </li>
+        </ul>
+        <header>
+            <div id="wb-bnr" class="container">
+                <section id="wb-lng" class="text-right">
+                    <h2 class="wb-inv">Language selection</h2>
+                    <ul class="list-inline margin-bottom-none">
+                        <li><a lang="fr" href="https://sante-infobase.canada.ca/covid-19/securite-vaccins/sommaire.html">Français</a></li>
+                    </ul>
+                </section>
+                <div class="row">
+                    <div class="brand col-xs-5 col-md-4">
+                        <a href="https://www.canada.ca/en.html"><img src="/src/GCWeb/assets/sig-blk-en.svg" alt=""><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
+                    </div>
+                    <section id="wb-srch" class="col-lg-8 text-right">
+                        <h2>Search</h2>
+                        <form action="https://www.canada.ca/en/sr/srb.html" method="get" name="cse-search-box" role="search" class="form-inline">
+                            <div class="form-group">
+                                <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
+                                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
+                                <datalist id="wb-srch-q-ac">
+                                </datalist>
+                            </div>
+                            <div class="form-group submit">
+                                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <nav class="gcweb-menu" typeof="SiteNavigationElement">
+                <div class="container">
+                    <h2 class="wb-inv">Menu</h2>
+                    <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+                    <ul role="menu" aria-orientation="vertical" data-ajax-replace="/src/ajax/sitemenu-v2-en.html">
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+                        <li role="presentation"><a role="menuitem" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+                        <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Science and innovation</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav id="wb-bc" property="breadcrumb">
+                <h2>You are here:</h2>
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+                        <li><a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html">Coronavirus disease (COVID-19)</a></li>
+                        <li><a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines.html">Vaccines for COVID-19</a></li>
+                </div>
+            </nav>
+        </header>
+        <main property="mainContentOfPage" id="main" class="container">
+            <h1>Reported side effects following COVID-19 vaccination in Canada</h1>
+
+            <div class="col-md-12" style="padding: 0">
+                <div class="btn-group btn-group-lg btn-group-justified" style="padding:20px 0px;">
+                    <a class="btn btn-primary active" role="button" href="#">Summary</a>
+                    <a class="btn btn-default" role="button" href="/covid-19/vaccine-safety/">Detailed Report</a>
+                    <a class="btn btn-default" role="button" href="/covid-19/vaccine-safety/utd.html">Understanding the data</a>
+                    <a class="btn btn-default" role="button" href="/covid-19/vaccine-safety/archive/">Archived reports</a>
+                </div>
+            </div>
+            <p>This page will be updated next on January 20, 2022 at noon EST.</p>
+            <!--<section class="alert alert-info">-->
+            <!--    <p style="font-weight:bold;">Changes to the update schedule</p>-->
+            <!--	<p>Please note that due to the holidays, the May 27 report will be published on May 30, 2022.</p>-->
+            <!--</section>-->
+            <h2>Report summary <small>updated December 22, 2022</small></h2>
+            <ul>
+                <li>A total of <strong>95,565,309</strong> vaccine doses have been administered in Canada as of December 9, 2022. Adverse events (side effects) have been reported by <strong>53,064</strong> people. <strong>That’s about 6 people out of every 10,000 people vaccinated who have reported 1 or more adverse events</strong>.
+                    <ul>
+                        <li>Of the <strong>53,064</strong> individual reports, <strong>42,545</strong> were considered non-serious (<strong>0.045% of all doses administered</strong>) and <strong>10,519</strong> were considered serious (<strong>0.011% of all doses administered</strong>).</li>
+                        <li>Of the the 53,064 reports, 225 followed vaccination with a bivalent COVID-19 vaccine (0.0036% of Bivalent COVID-19 doses administered). 51 (0.0008%) were considered serious.</li>
+                        <li>Most adverse events are mild and include soreness at the site of injection or a slight fever.</li>
+                        <li>Serious adverse events are <strong>rare</strong>, but do occur. They include anaphylaxis (a severe allergic reaction), which has been reported <strong>897</strong> times (1 report per 100,000 doses administered) for all COVID-19 vaccines across Canada. That’s why you may need to wait for a period of time after you receive a vaccination so that you can receive treatment in case of an allergic reaction.</li>
+                        <!--<li>20 adverse event reports are following vaccination with Moderna Spikevax Bivalent (Original/Omicron BA.1) COVID-19 vaccine (0.001% of Moderna Spikevax Bivalent Original and Omicron BA.1 COVID-19 doses administered). Of these 20 reports, 7 were considered serious and all 20 are captured under original Moderna Spikevax throughout this report. As of October 14, 2022 we have not received any adverse event reports following vaccination with the Pfizer-BioNTech Comirnaty Bivalent (Original and Omicron BA.4/BA.5) COVID-19 vaccine.</li>-->
+                    </ul>
+                </li>
+                <li>All serious adverse event reports undergo medical review to see if there are any safety issues needing further action. These processes include meeting regularly to review the data with provincial and territorial partners, the regulator, research networks and medical advisors. Any unexpected safety concerns are detected quickly and acted upon immediately.</li>
+                <li style="font-weight:bold;">Adverse events may occur after being vaccinated with a COVID-19 vaccine, but they are not necessarily related to the vaccine.</li>
+                <li>Evidence indicates that the benefits of COVID-19 vaccines continue to outweigh the risks of the disease.</li>
+            </ul>
+            
+            <h2>Adverse events of interest</h2>
+            <ul>
+                <li><a href="https://health-infobase.canada.ca/covid-19/vaccine-safety/#detailedSafetySignals">Thrombosis with thrombocytopenia syndrome following vaccination with AstraZeneca Vaxzevria/COVISHIELD COVID-19 vaccine.</a></li>
+                <li><a href="https://health-infobase.canada.ca/covid-19/vaccine-safety/#detailedSafetySignals">Myocarditis (inflammation of the heart muscle) and pericarditis (inflammation of the lining around the heart) following vaccination with COVID-19 mRNA vaccines.</a></li>
+            </ul>
+
+            <div class="row row-no-gutters mrgn-tp-xl">
+                <div class="col-sm-7 col-lg-6">
+                    <section class="gc-pg-hlpfl provisional">
+                        <div class="well mrgn-bttm-0">
+                            <form id="gc-pg-hlpfl-frm" action="#" method="post" autocomplete="off">
+                                <input type="hidden" name="institutionopt" value="Health Canada">
+                                <input type="hidden" name="themeopt" value="Health">
+                                <input type="hidden" name="sectionopt" value="Vaccines">
+                                <input type="hidden" name="language" value="en">
+                                <input type="hidden" name="pageTitle" value="COVID-19 vaccine safety">
+                                <input type="hidden" name="submissionPage" value="https://health-infobase.canada.ca/covid-19/vaccine-safety/summary.html">
+                                <input type="hidden" id="helpful" name="helpful" value="Yes">
+
+                                <div class="gc-pg-hlpfl-btn">
+                                    <div class="row row-no-gutters">
+                                        <div class="col-xs-12 col-sm-7 mrgn-tp-sm">
+                                            <h2 class="mrgn-tp-sm h5">Did you find what you were looking for?</h2>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-5 text-right">
+                                            <button id="btnyes" type="submit" value="Yes" class="btn btn-primary">Yes</button>
+                                            <button id="btnno" type="button" class="btn btn-primary mrgn-lft-sm nojs-hide">No</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="h3 hidden nojs-show">If not, tell us why:</p>
+                                <div class="gc-pg-hlpfl-no nojs-show">
+                                    <fieldset>
+                                        <legend class="h4 mrgn-tp-0 mrgn-bttm-md">What was wrong?</legend>
+                                        <div class="radio">
+                                            <label for="problem1">
+                                                <input name="problem" id="problem1" type="radio" value="The answer I need is missing" data-gc-analytics-wtph-value="The answer I need is missing-La réponse dont j’ai besoin n’est pas là" data-gc-analytics-collect="notPrivate">
+                                                The answer I need is missing
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="problem2">
+                                                <input name="problem" id="problem2" type="radio" value="The information isn’t clear" data-gc-analytics-wtph-value="The information isn’t clear-L'information n'est pas claire" data-gc-analytics-collect="notPrivate">
+                                                The information isn’t clear
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="problem3">
+                                                <input name="problem" id="problem3" type="radio" value="I’m not in the right place" data-gc-analytics-wtph-value="I’m not in the right place-Je ne suis pas au bon endroit" data-gc-analytics-collect="notPrivate">
+                                                I’m not in the right place
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="problem4">
+                                                <input name="problem" id="problem4" type="radio" value="Something is broken or incorrect" data-gc-analytics-wtph-value="Something is broken or incorrect-Quelque chose est brisé ou incorrect" data-gc-analytics-collect="notPrivate">
+                                                Something is broken or incorrect
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="problem5">
+                                                <input name="problem" id="problem5" type="radio" value="Other reason" data-gc-analytics-wtph-value="Other reason-Autre raison" data-gc-analytics-collect="notPrivate">
+                                                Other reason
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                    <label for="problem6" class="mrgn-bttm-0">Please provide more details</label>
+                                    <p class="small">
+                                        <strong>(Don’t include any personal information. Note that you will not receive a reply.)</strong>
+                                        <br>
+                                        <span class="small">Maximum 300 characters</span>
+                                    </p>
+                                    <textarea id="problem6" name="details" class="full-width" maxlength="300"></textarea>
+                                    <button type="submit" value="No" class="btn btn-primary mrgn-tp-md mrgn-bttm-sm">Submit</button>
+                                </div>
+                            </form>
+                            <div class="gc-pg-hlpfl-thnk hide">
+                                <p class="h6 mrgn-tp-sm mrgn-bttm-sm"><span class="far fa-check-circle text-success mrgn-rght-sm" aria-hidden="true"></span> Thank you for your feedback</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-sm-3 col-sm-offset-1 col-lg-offset-3">
+                    <div class="wb-share" data-wb-share="{&quot;pnlId&quot;:&quot;pnlShrPg&quot;, &quot;lnkClass&quot;: &quot;btn btn-default btn-block mrgn-tp-md&quot;}"></div>
+                </div>
+            </div>
+
+            <div class="row pagedetails">
+                <div class="datemod col-xs-12 mrgn-tp-lg">
+                    <dl id="wb-dtmd">
+                        <dt>Date modified: </dt>
+                        <dd><time class="dateModified" property="dateModified">2021-10-04</time></dd>
+                    </dl>
+                </div>
+            </div>
+        </main>
+        <footer id="wb-info">
+            <div class="landscape">
+                <nav class="container wb-navcurr">
+                    <h2 class="wb-inv">About government</h2>
+                    <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+                        <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+                        <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+                        <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+                        <li><a href="https://www.canada.ca/en/news.html">News</a></li>
+                        <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+                        <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+                        <li><a href="https://pm.gc.ca/eng">Prime Minister</a></li>
+                        <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+                        <li><a href="https://open.canada.ca/en/">Open government</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="brand">
+                <div class="container">
+                    <div class="row">
+                        <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+                            <h2 class="wb-inv">About this site</h2>
+                            <ul>
+                                <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+                                <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+                                <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+                                <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+                                <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+                            </ul>
+                        </nav>
+                        <div class="col-xs-6 visible-sm visible-xs tofpg">
+                            <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+                            <img src="/src/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/src/js/jquery/2.1.4/jquery.min.js"></script>
+        <script src="/src/wet-boew/js/wet-boew.min.js"></script>
+        <script src="/src/GCWeb/js/theme.min.js"></script>
+        <script src="/src/js/bootstrap.js"></script>
+        <script src="/src/js/d3.v5.min.js"></script>
+        <script src="/src/js/polylabel.js"></script>
+        <script src="/src/js/d3-array.v2.min.js"></script>
+        <script type="text/javascript" src="/src/js/polyfill.js"></script>
+        <script type="text/javascript">
+            $(document).on("wb-ready.wb", function() {
+                $("#btnno").click(function(e) {
+                    $(".gc-pg-hlpfl-no").removeClass("nojs-show");
+                    $(".gc-pg-hlpfl-btn").addClass("hide");
+                    $("#helpful").val("No");
+                });
+                $("#gc-pg-hlpfl-frm").submit(function(e) {
+                    e.preventDefault();
+                    $(".gc-pg-hlpfl-thnk").removeClass("hide");
+                    $("#gc-pg-hlpfl-frm").addClass("hide nojs-show");
+                    $.ajax({
+                        url: 'https://pagesuccessemailqueue.azurewebsites.net/api/QueueProblemForm',
+                        type: 'POST',
+                        dataType: 'text',
+                        data: $('form#gc-pg-hlpfl-frm').serialize(),
+                        success: function(data) {},
+                        error: function(xhr, status, err) {
+                            console.log(xhr.responseText);
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+
+</html>

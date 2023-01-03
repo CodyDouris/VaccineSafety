@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">	
+		<meta name="description" content="Information about any adverse events following immunization (AEFI) that individuals have reported after receiving a COVID-19 vaccine in Canada. These adverse events are not necessarily related to the vaccine.">	
+		<meta name="keywords" content="coronavirus, covid-19, pandemic, Canada, vaccines covid, vaccines canada, vaccines covid, coronavirus vaccines, safety, side effects, adverse reaction, AEFI">	
+		<meta name="author" content="Public Health Agency of Canada">	
+		<meta name="dcterms.title" content="COVID-19 vaccine safety: Report on side effects following immunization">	
+		<meta name="dcterms.description" content="Information about any adverse events following immunization (AEFI) that individuals have reported after receiving a COVID-19 vaccine in Canada. These adverse events are not necessarily related to the vaccine.">	
+		<meta name="dcterms.creator" content="Public Health Agency of Canada">	
+		<meta name="dcterms.language" title="ISO639-2/T" content="eng">
+		<meta name="dcterms.subject" title="gccore" content="HE Health and Safety">	
+		<meta name="dcterms.issued" title="W3CDTF" content="2021-01-08">	
+		<meta name="dcterms.modified" title="W3CDTF" content="2021-01-29">	
+		<meta name="dcterms.spatial" content="Canada">	
+		<meta name="dcterms.type" content="datasets;statistics;education and awareness">	
+		<meta name="dcterms.source" content="aem">	
+		<meta name="dcterms.identifier" content="Public_Health_Agency_of_Canada">
+		<meta prefix="fb: https://www.facebook.com/2008/fbml" property="fb:pages" content="378967748836213, 160339344047502, 184605778338568, 237796269600506, 10860597051, 14498271095, 209857686718, 160504807323251, 111156792247197, 113429762015861, 502566449790031, 312292485564363, 1471831713076413, 22724568071, 17294463927, 1442463402719857, 247990812241506, 730097607131117, 1142481292546228, 1765602380419601, 131514060764735, 307780276294187, 427238637642566, 525934210910141, 1016214671785090, 192657607776229, 586856208161152, 1146080748799944, 408143085978521, 490290084411688, 163828286987751, 565688503775086, 460123390028, 318424514044, 632493333805962, 370233926766473, 173004244677, 1562729973959056, 362400293941960, 769857139754987, 167891083224996, 466882737009651, 126404198009505, 135409166525475, 664638680273646, 169011506491295, 217171551640146, 182842831756930, 1464645710444681, 218822426028, 218740415905, 123326971154939, 125058490980757, 1062292210514762, 1768389106741505, 310939332270090, 285960408117397, 985916134909087, 655533774808209, 1522633664630497, 686814348097821, 230798677012118, 320520588000085, 103201203106202, 273375356172196, 61263506236, 353102841161, 1061339807224729, 1090791104267764, 395867780593657, 1597876400459657, 388427768185631, 937815283021844, 207409132619743, 1952090675003143, 206529629372368, 218566908564369, 175257766291975, 118472908172897, 767088219985590, 478573952173735, 465264530180856, 317418191615817, 428040827230778, 222493134493922, 196833853688656, 194633827256676, 252002641498535, 398018420213195, 265626156847421, 202442683196210, 384350631577399, 385499078129720, 178433945604162, 398240836869162, 326182960762584, 354672164565195, 375081249171867, 333050716732105, 118996871563050, 240349086055056, 119579301504003, 185184131584797, 333647780005544, 306255172770146, 369589566399283, 117461228379000, 349774478396157, 201995959908210, 307017162692056, 145928592172074, 122656527842056">
+
+    <title>COVID-19 vaccine safety: Report on side effects following immunization - Canada.ca</title>
+   
+	<link rel="apple-touch-icon" sizes="57x57 72x72 114x114 144x144 150x150" class="wb-favicon" href="/src/GCWeb/assets/favicon-mobile.png"><link href="/src/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" class="wb-init wb-favicon-inited">
+
+    <link href="/src/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/GCWeb/css/wet-boew.min.css">
+    <link rel="stylesheet" href="/src/GCWeb/css/theme.min.css">
+
+    <noscript><link rel="stylesheet" href="/src/wet-boew/css/noscript.min.css"></noscript>
+
+    <style>
+        #bigGraph{
+            font-size:0.7em;
+        }
+            .circle {
+            display: inline-block;
+            float: left;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: 0 5px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+        .selection {
+            -webkit-user-select: none;
+            /* Safari */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* IE10+/Edge */
+            user-select: none;
+            /* Standard */
+            margin: 0 1px;
+            position: relative;
+            width: 150px;
+            height: 40px;
+            font-size: 1em;
+            border: solid 2px rgba(150, 150, 150, 0.2);
+            cursor: pointer;
+        }
+
+        .selection p {
+            line-height: 20px;
+            margin-left: 22px;
+            display: inline;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .selection:hover {
+            background-color: rgba(150, 150, 150, 0.2);
+        }
+
+        #displayPanel {
+            width: 100%;
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 150px 1fr;
+            grid-template-columns: 150px auto;
+        }
+
+        #logPanel {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;
+            padding-bottom: 5px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #logPanel button {
+            height: 35px;
+            margin: 0;
+        }
+
+        #descPanel {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+        }
+
+        #descPanel p {
+            line-height: 20px;
+            font-size:0.9em;
+            margin:0;
+            text-align: center;
+        }
+
+        #descPanel span {
+            font-weight: bold;
+        }
+
+        #btnPanel {
+        -ms-grid-column-span:2;
+        -ms-grid-row:3;
+        grid-column: span 2;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #graphPanel {
+                -ms-grid-column:1;
+            -ms-grid-column-span:2;
+            -ms-grid-row:2;
+            grid-column: span 2;
+            grid-row: 2/3;
+            width: 100%;
+        }
+
+        #big {
+            width: 100%;
+            height: 300px;
+        }
+
+        #big .tick text {
+            font-size: 1.1em;
+        }
+
+        .tab {
+            overflow: hidden;
+            background-color: white;
+            color: #295376;
+        }
+
+        /* Style the buttons inside the tab */
+
+        .tab button {
+            background-color: inherit;
+            /*float: left;*/
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 2px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+            color: #295376;
+        }
+
+        /* Change background color of buttons on hover */
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button:focus {
+            border: 1px solid black;
+        }
+
+        /* Create an active/current tablink class */
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+
+        .bar {
+            fill: #015B7E;
+            stroke: #015B7E;
+        }
+
+        .axis {
+            stroke: #D8D8D8;
+        }
+
+        text {
+            /* fill: #6c686f; */
+            fill: black;
+        }
+
+        .tick>line,
+        .domain {
+            stroke: #ccc;
+        }
+
+        .x-axis-title,
+        .y-axis-title {
+            font-size: 0.8em;
+        }
+
+        .x-axis .tick line {
+            stroke: black;
+        }
+
+        .x-axis,
+        .y-axis {
+            font-size: 12px;
+        }
+
+        label {
+            display: inline;
+        }
+
+        .line {
+            fill: none;
+            stroke-width: 3px;
+        }
+
+        .chart rect {
+            stroke: black;
+            stroke-width: 0.09px;
+        }
+        
+        /*dashboard */
+        #dashboard {
+            /*height: 90%;*/
+        }
+        
+        /* Key numbers boxes */
+        .boxes {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 1px;
+            padding-right: 1px;
+            height: 10%;
+            justify-content: center;
+        }
+
+        .hiddenInfo {
+            border-radius: 10px;
+        }
+
+        .boxes .parent, .boxes .parent:visited, .boxes .parent:focus {
+            flex: 0 0 30%;    
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .boxes .box {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .boxes .parent:hover {
+            border: 3px solid #000;
+            border-radius: 10px;
+            box-shadow: 2px 2px;
+        }
+        
+        .innerBox {
+            flex: 0 0 23%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-left: 0px;
+            margin-right: 3px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 5px;
+        }
+        .innerBox div {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        .boxes p {
+            font-size: 18px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .boxes p.h2 {
+            font-size: 30px;
+            margin-top: 5px;
+        }
+        table {
+            border: 1.5px solid black;
+        }
+        .top{
+            margin-bottom: 10px;
+        }
+        td {
+            border: 1.5px solid black;
+            padding: 4px;
+        }
+        th {
+            border: 1.5px solid black;
+            padding: 5px;
+        }
+        
+        /* Graph Panels */
+        #graphArea {
+            /*text-align: center;*/
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .graphPanels {
+            flex: 0 0 47%;
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        
+        #graphHospital text,
+        #graphHospitalBySex text {
+            font-size: 16px;
+        }
+
+        #probable-exposure .y-axis,
+        #probable-exposure .x-axis,
+        #probable-exposure #legend {
+            font-size: 16px;
+        }
+
+        td#ratetested {
+            min-width: 80px;
+        }
+
+        td#numtested {
+            min-width: 113px;
+        }
+            
+        #full:disabled{
+          background-color: #cccccc;
+        }
+
+        @media only screen and (max-width: 800px) {
+
+            #probable-exposure .y-axis,
+            #probable-exposure .x-axis,
+            #probable-exposure #legend {
+                font-size: 18px;
+            }
+
+            #hospitalization text {
+                font-size: 18px;
+            }
+            .x-axis-title,
+            .y-axis-title {
+                font-size: 1.1em!important;
+            }
+            .txtTotal {
+                white-space: nowrap;
+            }
+            
+            .boxes .parent:visited, .boxes .parent:focus, .boxes .parent:hover {
+                flex: 0 0 37.5%;    
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin: 5px;
+                text-decoration: none;
+                color: black;
+            }
+            .boxes p{
+                font-size: 16px;
+            }
+        }
+
+        @media only screen and (max-width: 991px) {
+            .selection {
+                border-radius: 0;
+            }
+            #big {
+                height: 500px;
+            }
+            #btnPanel {
+                -ms-grid-column-span: 2;
+                -ms-grid-row: 3;
+                grid-column: span 2;
+            }
+            #graphPanel {
+                -ms-grid-column: 1;
+                -ms-grid-column-span: 2;
+                -ms-grid-row: 2;
+                grid-column: span 2;
+                grid-row: 2/3;
+            }
+            #mainImg {
+                margin-bottom: 20px;
+            }
+            .textarea {
+                margin-top: 20px;
+            }
+                        #full, #howto {
+                display:none;
+            }
+         .innerBox, .graphPanels {
+             flex: 0 0 100%;
+         }   
+        }
+
+        @media only screen and (min-width: 991px) {
+            .pathText {
+                display: none;
+            }
+            .textarea {
+                margin-top: 128px;
+                height: 138px;
+            }
+        }
+
+        #graphHospitalBySex {
+            display: none;
+        }
+
+        @media only screen and (max-width: 525px) {
+            .selection {
+                width: 180px;
+                height: 50px;
+            }
+            .selection p {
+                margin-left: 27px;
+            }
+            #big {
+                height: 300px;
+            }
+            #descPanel {
+                -ms-grid-column: 1;
+                -ms-grid-column-span: 2;
+                -ms-grid-row: 2;
+                grid-column: span 2;
+            }
+            #logPanel {
+                -ms-grid-column-span: 2;
+                flex-wrap: wrap;
+                grid-column: span 2;
+            }
+            #btnPanel {
+                -ms-grid-row: 4;
+            }
+            #graphPanel {
+                -ms-grid-row: 3;
+                grid-column: span 2;
+                grid-row: 3/4;
+            }
+            .btn-success,
+            .btn-info {
+                margin: 5px 0px!important;
+                width: 100%!important;
+            }
+        }
+
+        @media only screen and (max-width: 1690px)  {
+            p.fsel, h3.fsel {
+                font-size: 1.1vw!important;
+            }
+            
+            h1.fsel{
+                font-size: 2vw!important;
+            }
+            
+            .innerBox.fsel{
+                margin-left: 2px;
+                margin-right: 2px;
+            }
+            
+            #full.fsel, #howto.fsel, #langToggle.fsel{
+                font-size: 0.8vw;
+            }
+            
+            .graphPanels.fsel{
+                /*height: 40%!important;*/
+                /*flex: 0 0 46%!important;*/
+                margin: 2px!important;
+            }
+            
+            #barDiv.fsel .axis text, #barDiv.fsel .barText{
+                font-size: 23px!important;
+            }
+            
+            #trendData.fsel .trendX text,#trendData.fsel .trendY text,#trendData.fsel .xAxisTrendLabel,#trendData.fsel yAxisTrendLabel,#trendData2.fsel .trendX2 text,#trendData2.fsel .trendY2 text,#trendData2.fsel .xAxisTrendLabel2, yAxisTrendLabel2{
+                font-size: 15px;
+            }
+            
+            .graphPanelsText p.fsel{
+                line-height: 3vh;
+                font-size: 1.3vh!important;
+            }
+        }
+        
+        @media only screen and (max-width: 1200px)  {
+            .dropdown {
+                /*height: 29px !important;*/
+                font-size: 0.9em !important;
+            }
+        }
+        
+        @media only screen and (max-width: 1000px)  {
+            #full, #howto, #langToggle {
+                margin-top:-10px !important;
+            } 
+        }
+    	.navbuttons {
+    	    padding:0px;
+    	}
+    	.navbuttons .btn-group{
+    	    padding:20px 0px;
+    	}
+    	@media only screen and (max-width: 768px) {
+    	    .boxes .parent, .boxes .parent:visited, .boxes .parent:focus, .boxes .parent:hover {
+            flex: 0 0 100%;
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+    	    }
+    	    .navbuttons a {
+    	        padding:10px 0px !important;
+    	    }
+    	}
+    	
+    	.info {
+    	    opacity: 0.3;
+    	}
+    	
+    	.info:hover{
+    	    cursor: pointer; 
+    	    opacity:1;
+    	}
+    	
+    	.info:hover + .hiddenInfo{
+    	    display: block;
+    	}
+    	
+    	.hiddenInfo {
+    	    display: none;
+    	}
+    	
+    </style>
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+    <script>dataLayer1 = [];</script>
+	<script>dataLayer = [];</script>
+    <!-- End Google Tag Manager -->
+    	<!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TN3RPZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TN3RPZ');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager DO NOT REMOVE OR MODIFY - NE PAS SUPPRIMER OU MODIFIER -->
+    <noscript><iframe title="Google Tag Manager" src="//www.googletagmanager.com/ns.html?id=GTM-TLGQ9K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer1'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer1','GTM-TLGQ9K');</script>
+    <!-- End Google Tag Manager -->
+    
+    <ul id="wb-tphp">
+        <li class="wb-slc">
+            <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+        </li>
+        <li class="wb-slc">
+            <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+        </li>
+    </ul>
+    <header>
+        <div id="wb-bnr" class="container">
+            <section id="wb-lng" class="text-right">
+                <h2 class="wb-inv">Language selection</h2>
+                <ul class="list-inline margin-bottom-none">
+                    <li><a lang="fr" href="https://sante-infobase.canada.ca/covid-19/securite-vaccins/">Français</a></li>
+                </ul>
+            </section>
+            <div class="row">
+                <div class="brand col-xs-5 col-md-4">
+                    <a href="https://www.canada.ca/en.html"><img src="/src/GCWeb/assets/sig-blk-en.svg" alt=""><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
+                </div>
+                <section id="wb-srch" class="col-lg-8 text-right">
+                    <h2>Search</h2>
+                    <form action="https://www.canada.ca/en/sr/srb.html" method="get" name="cse-search-box" role="search" class="form-inline">
+                        <div class="form-group">
+                            <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
+                            <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
+                            <datalist id="wb-srch-q-ac">
+                            </datalist>
+                        </div>
+                        <div class="form-group submit">
+                            <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <nav class="gcweb-menu" typeof="SiteNavigationElement">
+            <div class="container">
+                <h2 class="wb-inv">Menu</h2>
+                <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+                <ul role="menu" aria-orientation="vertical" data-ajax-replace="/src/ajax/sitemenu-v2-en.html">
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://travel.gc.ca/">Travel and tourism</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+                    <li role="presentation"><a role="menuitem" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+                    <li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/finance.html">Science and innovation</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="wb-bc" property="breadcrumb">
+            <h2>You are here:</h2>
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+                    <li><a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html">Coronavirus disease (COVID-19)</a></li>
+                    <li><a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines.html">Vaccines for COVID-19</a></li>
+                 </ol>
+            </div>
+        </nav>
+    </header>
+    <main property="mainContentOfPage" id="main" class="container">
+    	<div id="surveyIframe" style="background-color:#335075;width:100%;height:150px;position:fixed;bottom:0px;left:0px;z-index:100;">
+    		<button type="button" class="mfp-close overlay-close" title="Close overlay" style="">×<span class="wb-inv"> Close survey overlay</span></button>
+    		<iframe src="https://ca1se.voxco.com/SE/?st=dgKt%2FuQTAgrMcyZdP0fuwOOo%2BQPsqhn%2B4rx9ZweEmF4%3D&lang=EN" height="150" width="100%" frameborder="0" scrolling="no" style="position:fixed;bottom:0px;z-index:100"></iframe>
+        </div>
+        
+        <h1>Reported side effects following COVID-19 vaccination in Canada</h1>
+        
+        <div class="col-md-12" style="padding: 0">
+            <div class="btn-group btn-group-lg btn-group-justified" style="padding:20px 0px;">
+                <a class="btn btn-default" role="button" href="/covid-19/vaccine-safety/summary.html">Summary</a>
+                <a class="btn btn-primary active" role="button" href="#">Detailed report</a>
+                <a class="btn btn-default" role="button" href="/covid-19/vaccine-safety/utd.html">Understanding the data</a>
+                <a class="btn btn-default" role="button" href="/covid-19/vaccine-safety/archive/">Archived reports</a>
+            </div>
+        </div>
+        <p>This page will be updated next on January 20, 2023 at noon EST.</p>
+  <!--      <section class="alert alert-info">-->
+  <!--          <p style="font-weight:bold;">Changes to the update schedule</p>-->
+		<!--	<p>Please note that due to the holidays, the May 27 report will be published on May 30, 2022.</p>-->
+		<!--</section>-->
+        <p class="h3">This page was last updated on December 22, 2022 with data up to and including <span class="dateToShort nowrap">MMM DD, YYYY</span>.</p>
+        
+        <h2>On this page</h2>
+        <ul>
+            <li><a href="#a1" class="anchor">What you need to know</a></li>
+            <li><a href="#howToReport" class="anchor">How to report an adverse event</a></li>
+            <li><a href="#a3" class="anchor">Reporting trends</a></li>
+            <li><a href="#a4" class="anchor">Adverse event following immunization reports by vaccine name</a></li>
+            <li><a href="#a5" class="anchor">Adverse event following immunization reports by age and sex</a></li>
+            <li><a href="#a6" class="anchor">Most common adverse events reported following immunization</a></li>
+            <li><a href="#specialInterest" class="anchor">Adverse events of special interest, safety signals and deaths</a></li>
+            <li><a href="#acknowledgements" class="anchor">Acknowledgements, suggested citation, and related links</a></li>
+        </ul>
+        <h2 id="a1">What you need to know <small><!--data reported--> up to and including <span class="dateToShort">MMM DD, 2021</span></small></h2>
+        <div class="boxes">
+            <div class="parent">
+                <a href="#newSafetyIssues" data-figure="1" class="anchor box" style="display: flex; align-items: center;">
+                    <div class="mrgn-tp-lg mrgn-bttm-lg" style="width: 100%;">
+                        <p class="h2"><span class="safetySignals">No new safety signals have been identified in Canada</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="parent">
+                <a href="#a3" data-figure="1" class="anchor box" style="display: flex; align-items: center;">
+                    <div class="mrgn-tp-xl mrgn-bttm-lg" style="width: 100%">
+                        <p class="h2"><span class="totalDoses">56,151,862</span></p>
+                        <p>Total doses administered up to and including December 9, 2022</p>
+                    </div>
+                </a>
+            </div>
+            <div class="parent">
+                <a href="#a3" data-figure="1" class="anchor box" style="display: flex; align-items: center;">
+                    <div class="mrgn-tp-lg mrgn-bttm-lg" style="width: 100%">
+                        <p class="h2"><span class="totalAEFIs">17,982</span></p>
+                        <p>Total adverse event following immunization reports</p>
+                        <p class="h2"><small>(<span class="percentageDosesAdminTotal">0.032%</span> of all doses administered)</small></p>
+                    </div>
+                </a>
+            </div>
+            <div class="parent">
+                <a href="#seriousNonSerious" data-figure="1" class="anchor box" style="display: flex; align-items: center;">
+                    <div style="margin-top: 60px;" class="mrgn-bttm-lg">
+                        <p class="h2"><span class="totalNonseriousAEFIs">13,307</span></p>
+                        <p>Total adverse event following immunization reports that were non-serious</p>
+                        <p class="h2"><small>(<span class="percentageDosesAdminNonSerious">0.024%</span> of all doses administered)</small></p>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="parent">
+                <a href="#seriousNonSerious" data-figure="1" class="anchor box" style="display: flex; align-items: center;">
+                    <div style="margin-top: 60px;" class="mrgn-bttm-lg">
+                        <p class="h2"><span class="totalSeriousAEFIs">4,675</span></p>
+                        <p>Total adverse event following immunization reports that were serious</p>
+                        <p class="h2"><small>(<span class="percentageDosesAdminSerious">0.008%</span> of all doses administered)</small></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <ul>
+            <li>No new safety signals have been identified during this reporting period.</li>
+            <li>Evidence indicates that the benefits of COVID-19 vaccines continue to outweigh the risks of the disease.</li>
+            <li>Health Canada, the Public Health Agency of Canada (PHAC), the provinces and territories, and manufacturers continue to closely monitor the safety of COVID-19 vaccines. We’ll respond to any safety issues right away and will inform Canadians about any risks that arise in Canada.</li>
+            <li>Of the <strong><span class="totalAEFIs"></span></strong> individual reports (<span style="font-weight: bold;"><span class="percentageDosesAdminTotal"></span> of all doses administered</span>), <strong><span class="totalSeriousAEFIs"></span></strong> were considered serious (<span style="font-weight: bold;"><span class="percentageDosesAdminSerious"></span> of all doses administered</span>).
+                <ul>
+                    <li>Of the 53,064 reports, 225 followed vaccination with a bivalent COVID-19 vaccine (0.0036% of Bivalent COVID-19 doses administered). 51 (0.0008%) were considered serious.</li>
+                </ul>
+            </li>
+            
+            <!--<li>20 COVID-19 adverse event reports are following vaccination with Moderna Spikevax Bivalent (Original/Omicron BA.1) COVID-19 vaccine (0.001% of Moderna Spikevax Bivalent (Original/Omicron BA.1) COVID-19 doses administered).  Of these 20 reports, 7 were considered serious and all 20 are captured under Moderna Spikevax throughout this report. As of October 14, 2022 we have not received any adverse event reports following vaccination with the Pfizer-BioNTech Comirnaty Bivalent (Original and Omicron BA.4/BA.5) COVID-19 vaccine.</li>-->
+        </ul>
+        <h2 id="howToReport">How to report an adverse event</h2>
+        <p>If you experience an adverse event following immunization with a COVID-19 vaccine in Canada, please contact your healthcare provider. Learn more about <a href="https://www.canada.ca/en/public-health/services/immunization/reporting-adverse-events-following-immunization/form.html">reporting adverse events</a>.</p>
+        
+        <h2 id="a3">Reporting trends</h2>
+        <ul>
+            <li>The information on this page reflects detailed case information data from the Public Health Agency of Canada’s Canadian Adverse Events Following Immunization Surveillance System (CAEFISS) and Health Canada’s Canada Vigilance program. Doses administered used for reporting rate calculations have been adjusted to account for the delay between vaccination and reporting. The data on this page may undergo changes as more information about cases becomes available.</li>
+            <li>There have been a total of <span class="totalAEFIs" style="font-weight: bold;"></span> reports (<span style="font-weight: bold;"><!--<span class="coveragePer100KTotal"></span> -->55.6 reports per 100,000 doses administered</span>) up to and including <span style="font-weight: bold;" class="dateToShort nowrap"></span>. Of the  <span class="totalAEFIs" style="font-weight: bold;"></span> reports, <span class="totalSeriousAEFIs" style="font-weight: bold;"></span> were considered serious (<span style="font-weight: bold;"><!--<span class="coveragePer100KSerious">-->11.0</span> reports per 100,000 doses administered</span>). Overall, the rate of serious reports has remained low. Figure 1 below shows the number and rate of COVID-19 adverse event reports by reporting period, as well as the cumulative number of reports.</li>
+        </ul>
+       
+        <div id="section1" class="section">
+            <div id="figure1div" class="figure">
+                <h3>Figure 1.
+                    <label for="figure1-dropdown-measure" class="hidden">Choose a measure:</label>
+                    <span class="nowrap"><select id="figure1-dropdown-measure" class="dropdown">
+                        <option value="monthly">Number</option>
+                        <option value="rate">Rate</option>
+                        <option value="monthly&rate">Number and rate</option>
+                        <option value="total">Cumulative number</option>
+                    </select></span>
+                    <span style="display:none" class="nowrap"><select id="figure1-dropdown-measure_2" class="dropdown">
+                        <option value="number">number</option>
+                        <option value="rate">rate</option>
+                    </select></span>
+                    of COVID-19 vaccine adverse event reports received for 
+                    <select id="figure1-dropdown-measure3" class="dropdown">
+                        <option value="all">all people</option>
+                        <option value="18plus">people 18 years and older</option>
+                        <option value="12to17">people 12 to 17 years</option>
+                        <option id="childrenFig1" value="5to11">people 5 to 11 years</option>
+                        <option value="0to4">people 0 to 4 years</option>
+                    </select> 
+                    and total doses administered in a 4-week reporting period, up to and including <span class="dateToShort">MMM DD, 2021</span> (n=<span class="totalAEFIs nChange"></span>)<!--nChange-->
+                </h3>
+                <span id="note"></span>
+                <svg class="chart barVertStacked" id="figure1"></svg>
+                <details>
+				    <summary>Notes</summary>
+				    <ul>
+    				    <li style="font-size: 15px; line-height: 120%;">Although the cumulative number of adverse event reports continues to increase over time, so does the number of doses administered. Up to and including <span class="dateToShort">MMM DD, 2021</span> all adverse event reports represented 0.056% of all doses administered.</li>
+    				    <li style="font-size: 15px; line-height: 120%;">The shaded area represents a period of time (lag time) where there may be delays in receiving and processing reporting forms. There may also be delays in receiving data on doses administered.</li>
+                        <li style="font-size: 15px; line-height: 120%;">Please note that as of June 27, 2022, this figure reflects counts and rates over a 4 week period. This is due to changes in reporting schedules.</li>
+                        <li style="font-size: 15px; line-height: 120%;">Information on doses administered by age group was only available starting April 23, 2021 for those aged 12 and older, starting November 27, 2021 for those aged 5 to 11 years, and starting July 17, 2022 for those under the age of 5. Rates of adverse event reports and doses administered by age group are not reported before these dates.</li>
+                    </ul>
+				</details>
+            </div>
+            <details id="figure1aDetails" style="display:block">
+				<summary>Figure 1: Text Description</summary>
+				<h4 style="font-weight:bold;" class="text-left"><!--Total & New--> Number of <!--<span class="vaccine-type2"></span>--> COVID-19 adverse event reports received for all people up to and including <span class="dateToShort"></span> (n=<span class="totalAEFIs nChange">53,064</span>)</h4>
+				<div class="table-responsive">
+				<table id="figure1aTable" class="descTable table table-striped table-hover table-bordered">
+					<thead>
+                        <tr>
+                            <th scope="col">Reporting period</th>
+                            <th scope="col">Non-serious <span class="nowrap">reports</span>-all</th>
+                            <th scope="col">Serious <span class="nowrap">reports</span>-all</th>
+                            <th scope="col">Cumulative non-serious <span class="nowrap">reports</span>-all</th>
+                            <th scope="col">Cumulative serious <span class="nowrap">reports</span>-all</th>
+                            <th scope="col">Cumulative number of doses administered-all<sup>1</sup></th>
+                            <th scope="col">Number of doses administered-all<sup>1</sup></th>
+                            <th scope="col">Non-serious reporting rate-all<sup>2</sup></th>
+                            <th scope="col">Serious reporting rate-all<sup>2</sup></th>
+                            <th scope="col">Reporting rate-all<sup>2</sup></th>
+                            
+                            <th scope="col">Non-serious <span class="nowrap">reports</span>-18plus</th>
+                            <th scope="col">Serious <span class="nowrap">reports</span>-18plus</th>
+                            <th scope="col">Cumulative non-serious <span class="nowrap">reports</span>-18plus</th>
+                            <th scope="col">Cumulative serious <span class="nowrap">reports</span>-18plus</th>
+                            <th scope="col">Cumulative number of doses administered-18plus<sup>1</sup></th>
+                            <th scope="col">Number of doses administered-18plus<sup>1</sup></th>
+                            <th scope="col">Non-serious reporting rate-18plus<sup>2</sup></th>
+                            <th scope="col">Serious reporting rate-18plus<sup>2</sup></th>
+                            <th scope="col">Reporting rate-18plus<sup>2</sup></th>
+                            
+                            <th scope="col">Non-serious <span class="nowrap">reports</span>-12to17</th>
+                            <th scope="col">Serious <span class="nowrap">reports</span>-12to17</th>
+                            <th scope="col">Cumulative non-serious <span class="nowrap">reports</span>-12to17</th>
+                            <th scope="col">Cumulative serious <span class="nowrap">reports</span>-12to17</th>
+                            <th scope="col">Cumulative number of doses administered-12to17<sup>1</sup></th>
+                            <th scope="col">Number of doses administered-12to17<sup>1</sup></th>
+                            <th scope="col">Non-serious reporting rate-12to17<sup>2</sup></th>
+                            <th scope="col">Serious reporting rate-12to17<sup>2</sup></th>
+                            <th scope="col">Reporting rate-12to17<sup>2</sup></th>
+                            
+                            <th scope="col">Non-serious<span class="nowrap">reports</span>-5to11</th>
+                            <th scope="col">Serious <span class="nowrap">reports</span>-5to11</th>
+                            <th scope="col">Cumulative non-serious <span class="nowrap">reports</span>-5to11</th>
+                            <th scope="col">Cumulative serious <span class="nowrap">reports</span>-5to11</th>
+                            <th scope="col">Cumulative number of doses administered-5to11<sup>1</sup></th>
+                            <th scope="col">Number of doses administered-5to11<sup>1</sup></th>
+                            <th scope="col">Non-serious reporting rate-5to11<sup>2</sup></th>
+                            <th scope="col">Serious reporting rate-5to11<sup>2</sup></th>
+                            <th scope="col">Reporting rate-5to11<sup>2</sup></th>
+                            
+                            <th scope="col">Non-serious<span class="nowrap">reports</span>-0to4</th>
+                            <th scope="col">Serious <span class="nowrap">reports</span>-0to4</th>
+                            <th scope="col">Cumulative non-serious <span class="nowrap">reports</span>-0to4</th>
+                            <th scope="col">Cumulative serious <span class="nowrap">reports</span>-0to4</th>
+                            <th scope="col">Cumulative number of doses administered-0to4<sup>1</sup></th>
+                            <th scope="col">Number of doses administered-0to4<sup>1</sup></th>
+                            <th scope="col">Non-serious reporting rate-0to4<sup>2</sup></th>
+                            <th scope="col">Serious reporting rate-0to4<sup>2</sup></th>
+                            <th scope="col">Reporting rate-0to4<sup>2</sup></th>
+                        </tr>
+					</thead>
+				</table>
+				<p><sup>1</sup> Doses administered used for rate calculations have been adjusted to account for the delay between vaccination and reporting.</p>
+				<p><sup>2</sup> Reporting rate per 100,000 doses administered.</p>
+				</div>
+			</details>
+        </div>
+        <div id="section2" class="section">
+            <h2 id="a4">Adverse event following immunization reports by vaccine name</h2>
+            <ul>
+                <li>Figure 2 shows the breakdown of reports by vaccine name. For doses administered by vaccine type, please visit the <a href="https://health-infobase.canada.ca/covid-19/vaccination-coverage/">vaccination coverage report</a>.</li>
+                <li>Higher rates of non-serious adverse event reports are observed for each vaccine. Serious report rates remain low. Currently, rates of adverse event reports following the first dose are higher than after subsequent doses.</li>
+                <li>The data for subsequent doses do not take into account which vaccine an individual received for previous doses. Generally, non-serious adverse event reports are consistent with information provided in the <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/covid19-industry/drugs-vaccines-treatments/vaccines.html">vaccine product pages.</a></li>
+                <li>Notes:
+                    <ul>
+                        <li>129 of the 53,064 COVID-19 adverse event reports (0.24%), involved people who received an influenza vaccine and a COVID-19 vaccine on the same day. These events have been closely monitored, and no new safety concerns have been identified.</li>
+                        <li>Of the 53,064 reports, 225 followed vaccination with a bivalent COVID-19 vaccine (0.0036% of Bivalent COVID-19 doses administered). 51 (0.0008%) were considered serious.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Figure 2.
+                    <label for="figure2-dropdown-measure" class="hidden">Choose a measure:</label>
+                    <span class="nowrap"><select id="figure2-dropdown-measure" class="dropdown">
+                        <option value="number">Number</option>
+                        <option id="rate" value="rate">Rate</option>
+                    </select></span> of adverse event reports received for 
+                    <select id="figure2-dropdown-measure2" class="dropdown">
+                        <option value="all">all people</option>
+                        <option value="18plus">people 18 years and older</option>
+                        <option id="youth" value="12to17">people 12 to 17 years</option>
+                        <option id="children" value="5to11">people 5 to 11 years</option>
+                        <option id="noRate" value="0to4">people 0 to 4 years</option>
+                    </select>  by vaccine name and 
+                    <select id="figure2-dropdown-measure3" class="dropdown">
+                        <option value="Total">all doses</option>
+                        <option value="Dose 1">dose 1</option>
+                        <option value="Dose 2">dose 2</option>
+                        <option value="Dose 3">dose 3</option>
+                        <option value="Dose 4+">dose 4+</option>
+                    </select>
+                    up to and including <span class="dateToShort">MMM DD, 2021</span> (n=<span class="nChange2"></span>)</h3>
+            <div id="figure2div" class="figure">
+                <svg class="chart barVertStacked" id="figure2"></svg>
+            </div>
+            <details>
+				    <summary>Notes</summary>
+                    <span style="font-size: 13px; font-weight:bold;">Total includes reports that did not specify dose number.</span>
+			</details>
+            <details>
+				<summary>Figure 2: Text Description</summary>
+				<div class="table-responsive">
+				    <h4>Number and rate (per 100,000 doses administered) of adverse event reports received for all people by vaccine name and dose number, up to and including <span class="dateToShort">MMM DD, 2021</span> (n=52,405<!--<span class="totalAEFIs"></span>-->)</h4>
+				<table id="figure2Table" class="descTable table table-striped table-hover table-bordered" style="margin-top:40px;">
+					<thead>
+                        <tr>
+                            <th scope="col">Vaccine name</th>
+                            <th scope="col">Non-serious reports-all<sup>2</sup></th>
+                            <th scope="col">Serious reports-all<sup>2</sup></th>
+                            <th scope="col">Total reports-all<sup>2</sup></th>
+                            <th scope="col">Non-serious reporting rate-all<sup>3</sup></th>
+                            <th scope="col">Serious reporting rate-all<sup>3</sup></th>
+                            <th scope="col">Total reporting rate-all<sup>3</sup></th>
+                            <th scope="col">Total number of doses administered-all</th>
+                            
+                            <th scope="col">Non-serious reports-18plus<sup>2</sup></th>
+                            <th scope="col">Serious reports-18plus<sup>2</sup></th>
+                            <th scope="col">Total reports-18plus<sup>2</sup></th>
+                            <th scope="col">Non-serious reporting rate-18plus<sup>3</sup></th>
+                            <th scope="col">Serious reporting rate-18plus<sup>3</sup></th>
+                            <th scope="col">Total reporting rate-18plus<sup>3</sup></th>
+                            <th scope="col">Total number of doses administered-18plus<sup>4</sup></th>
+                            
+                            <th scope="col">Non-serious reports-12to17<sup>2</sup></th>
+                            <th scope="col">Serious reports-12to17<sup>2</sup></th>
+                            <th scope="col">Total reports-12to17<sup>2</sup></th>
+                            <th scope="col">Non-serious reporting rate-12to17<sup>3</sup></th>
+                            <th scope="col">Serious reporting rate-12to17<sup>3</sup></th>
+                            <th scope="col">Total reporting rate-12to17<sup>3</sup></th>
+                            <th scope="col">Total number of doses administered-12to17</th>
+                            
+                            <th scope="col">Non-serious reports-5to11<sup>2</sup></th>
+                            <th scope="col">Serious reports-5to11<sup>2</sup></th>
+                            <th scope="col">Total reports-5to11<sup>2</sup></th>
+                            <th scope="col">Non-serious reporting rate-5to11<sup>3</sup></th>
+                            <th scope="col">Serious reporting rate-5to11<sup>3</sup></th>
+                            <th scope="col">Total reporting rate-5to11<sup>3</sup></th>
+                            <th scope="col">Total number of doses administered-5to11</th>
+                            
+                            <th scope="col">Non-serious reports-0to4<sup>2</sup></th>
+                            <th scope="col">Serious reports-0to4<sup>2</sup></th>
+                            <th scope="col">Total reports-0to4<sup>2</sup></th>
+                            <th scope="col">Non-serious reporting rate-0to4<sup>3</sup></th>
+                            <th scope="col">Serious reporting rate-0to4<sup>3</sup></th>
+                            <th scope="col">Total reporting rate-0to4<sup>3</sup></th>
+                            <th scope="col">Total number of doses administered-0to4</th>
+                        </tr>
+					</thead>
+				</table>
+				<!--<sup>*</sup>The number of dose 1 doses administered for certain vaccines have decreased since last report due to data updates.-->
+				<p><sup>1</sup>Includes reports that did not specify dose number.</p>
+				<p><sup>2</sup>Includes reports that contain information on more than one vaccine name.</p>
+				<p><sup>3</sup>Reporting rate per 100,000 doses administered.</p>
+				</div>
+			</details>
+        </div>
+        <div id="a5" class="section">
+            <h2 id="ageSex">Adverse event following immunization reports by age and sex</h2>
+            <h4>Age differences</h4>
+            <ul>
+                <li>The rate of adverse event reports was highest among the <strong>40 to 49 year age group</strong> (81.9 reports per 100,000 doses administered), followed by those in the 30-39 year age group (70.2 reports per 100,000 doses administered).</li>
+                <li>The rate of adverse event reports was lowest in the <strong>5 to 11 year age group.</strong></li>
+            </ul>
+            <h4>Sex differences</h4>
+            <ul>
+                <li>Overall, most adverse event reports were from females (72.6%). The reporting rate for <b>females</b> was <b>75.6 reports per 100,000 doses administered</b>, compared to <b>30.5 per 100,000 doses administered</b> for <b>males</b>. However, within the youngest age groups (&lt;18 years of age) the reporting rate is similar in males and females, or slightly higher in males. 
+                <ul>
+                    <li>This may be due to differences in health care seeking behaviour (for example, reporting adverse events) as well as biological differences between females and males.</li>
+                </ul>
+                <li>The higher proportion and rate of adverse event reports for females has been observed in the <a href="https://www.cdc.gov/mmwr/volumes/70/wr/mm7008e3.htm">United States</a>, the <a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(21)00224-3/fulltext#seccestitle130">United Kingdom</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8875740/">Israel</a>, and <a href="https://www.medrxiv.org/content/10.1101/2021.03.23.21253433v1">other countries</a>.</li>
+                <ul>
+                    <li>Health Canada, PHAC, and provincial and territorial public health authorities will continue to monitor but have not identified this as a safety issue.</li>
+                </ul>
+            </ul>
+            <h3>Figure 3. <span class="nowrap"><select id="figure3-dropdown-measure2" class="dropdown">
+                        <option value="number">Number</option>
+                        <option value="rate">Rate</option>
+                    </select></span> of adverse event reports received by 
+            <select id="figure3-dropdown-measure" class="dropdown">
+                        <option value="ageGroup">age group</option>
+                        <option value="both">age group and sex</option>
+            </select>
+            up to and including <span class="dateToShort">MMM DD, 2021</span> (n=<span class="totalAEFIs"></span>)</h3>
+            <div id="figure3div" class="figure">
+                <svg class="chart barGrouped trend" id="figure3"></svg>
+                <!--<p style="font-size: 15px; line-height: 120%;"><strong>Data notes:</strong> Reports of 11-year-olds who received the Pfizer-BioNtech Comirnaty COVID-19 vaccine dose for individuals 12 years of age and older before the pediatric dose was authorized were previously included in the 12 to 17 year age group. As of December 17, 2021, they are included in the 5 to 11 age group, regardless of dosage amount. Reports of 4-year-olds who received the Pfizer-BioNtech Cominarty COVID-19 vaccine dose for individuals 5 to 11 years of age are included in the 0 to 4 age group.</p>-->
+                <details id="figure3aDetails">				
+    				<summary>Figure 3: Text Description</summary>
+					<div class="table-responsive">
+					<h4 class="text-left">Number and rate (per 100,000 doses administered) of adverse event reports received by age group and sex up to and including <span class="dateToShort"></span> (n=<span class="totalAEFIs"></span>)</h4>
+    				<table id="figure3Table" class="descTable table table-striped table-hover table-bordered">
+    					<thead>
+                            <tr>
+                                <th scope="col">Age group</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Male</th>
+                                <th scope="col">Female</th>
+                                <th scope="col">Other</th>
+                                <th scope="col">Unknown</th>
+                                <th scope="col">Number of doses administered by age group</th>
+                                <th scope="col">Number of doses administered to males</th>
+                                <th scope="col">Number of doses administered to females</th>
+                                <th scope="col">Total number of doses administered<sup>1</sup></th>
+                                <th scope="col">Reporting rate by age group</th>
+                                <th scope="col">Male reporting rate<sup>2</sup></th>
+                                <th scope="col">Female reporting rate<sup>2</sup></th>
+                                <th scope="col">Total reporting rate (males and females)<sup>1,2</sup></th>
+                            </tr>
+    					</thead>
+    				</table>
+        				<p><sup>1</sup>Reports not identified as male or female were removed due to small numbers.</p>
+        				<p><sup>2</sup>Reporting rate per 100,000 doses administered.</p>
+        				<!--<p><sup>3</sup>Reports of 4-year-olds who received the Pfizer-BioNtech Cominarty COVID-19 vaccine dose for individuals 5 to 11 years of age are included in the 0 to 4 age group.</p>-->
+					</div>
+    			</details>				
+            </div>
+        </div>
+        
+        <div id="a6" class="section">
+            <h2 id="seriousNonSerious">Most common adverse events reported following immunization</h2>
+            <ul>
+				<li>The <span style="font-weight:bold;" class="totalAEFIs"></span> individual reports represent <span style="font-weight:bold;" class="totalAEFIs"></span> people who reported 1 or more adverse events. Among the <span class='totalAEFIs' style='font-weight:bold;'></span> reports, the most frequently reported adverse events are presented in Figure 4. Most of these adverse events are non-serious and are captured in the product monographs.</li>
+                <li>The most common report adverse event for all COVID-19 vaccines combined was paraesthesia with a rate of 7.87 per 100,000 doses administered.</li>
+            </ul>
+            <h3>Figure 4. <span class="nowrap"><select id="figure4-dropdown-measure2" class="dropdown">
+                        <option value="number">Number</option>
+                        <option value="rate">Rate</option>
+                    </select></span> of the most frequently reported adverse events 
+                    by vaccine type (<span class="nowrap"><select style="width:230px;" id="figure4-dropdown-measure" class="dropdown">
+                        <option value="total">Total</option>
+                        <option value="pfizer">Pfizer-BioNTech Comirnaty</option>
+                        <option class="noRateFig4" value="pfizer-bivalent">Pfizer-BioNTech Comirnaty Bivalent (Original/Omicron BA.4/BA.5)</option>
+                        <option value="moderna">Moderna Spikevax</option>
+                        <option class="noRateFig4" value="moderna-bivalent-BA1">Moderna Spikevax (Original/OmicronBA.1) Bivalent</option>
+                        <option class="noRateFig4" value="moderna-bivalent-BA45">Moderna Spikevax (Original/OmicronBA.4/5) Bivalent</option>
+                        <option value="covishield/astrazeneca">AstraZeneca Vaxzevria/COVISHIELD</option>
+                        <option id="janssen" value="janssen">Janssen JCOVDEN</option>
+                        <option class="noRateFig4" value="novavax">Novavax Nuvaxovid</option>
+                        <option class="noRateFig4" value="unspecified">Unspecified vaccine</option>
+                    </select></span>) up to and including <span class="dateToShort">MMM DD, 2021</span> (n=<span class="figure4NValue"></span>)<!--find the total n value-->
+                </h3>
+            <div>
+                <button style="content-align:center;" id="figure4Toggle" class="btn btn-success">Show more adverse events</button>
+            </div>
+            <svg class="chart barHorizStacked" id="figure4" height="600"></svg>
+            <details>
+				    <summary>Notes</summary>
+				    <span style="font-size: 13px; font-weight:bold;">Please note that 1 report represents 1 person and may contain information on more than 1 adverse event.</span>
+			</details>
+            <details>
+				<summary>Figure 4: Text Description</summary>
+				<div class="table-responsive">
+			    <h4 class="text-left">Number and rate (per 100,000 doses administered) of the most frequently reported adverse events by vaccine type up to and including <span class="dateToShort nowrap">MMM DD, 2021</span> (n=<span class="figure4NValue"></span>)</h4>
+				<table id="figure4Table" class="descTable table table-striped table-hover table-bordered">
+					<thead>
+                        <tr>
+                            <th scope="col">Most frequently reported events<sup>1</sup></th>
+                            <th scope="col">Number of Pfizer-BioNTech Comirnaty events</th>
+                            <th scope="col">Number of Moderna Spikevax events</th>
+                            <th scope="col">Number of AstraZeneca Vaxzevria/COVISHIELD events</th>
+                            <th scope="col">Number of Janssen JCOVDEN events</th>
+                            <th scope="col">Number of Novavax Nuvaxovid events</th>
+                            <th scope="col">Number of Unspecified events</th>
+                            <th scope="col">Total number of events</th>
+                            <th scope="col">Rate of Pfizer-BioNTech Comirnaty events (per 100,000 doses administered)</th>
+                            <th scope="col">Rate of Moderna Spikevax events (per 100,000 doses administered)</th>
+                            <th scope="col">Rate of AstraZeneca Vaxzevria/COVISHIELD events (per 100,000 doses administered)</th>
+                            <th scope="col">Rate of Janssen events (per 100,000 doses administered)</th>
+                            <th scope="col">Total rate of events (per 100,000 doses administered)</th>
+                        </tr>
+					</thead>
+				</table>
+				<p><sup>1</sup>Includes both serious and non-serious adverse events.</p>
+				<p><sup>2</sup>Includes adverse events meeting levels 1-3 of the <a href="https://brightoncollaboration.us/category/pubs-tools/case-definitions/">Brighton Collaboration level of diagnostic certainty.</a></p>
+				<!--<p><sup>3</sup>Includes adverse events meeting levels 4 of the <a href="https://brightoncollaboration.us/category/pubs-tools/case-definitions/">Brighton Collaboration level of diagnostic certainty.</a></p>-->
+				</div>
+			</details>
+			</div>
+            <h2 id="specialInterest">Adverse events of special interest, safety signals, and deaths</h2>
+            <!--<p>These reports do not imply a causal relationship between the vaccine and the adverse event. Some unrelated medical events do occur by chance after immunization, especially when millions of people are being vaccinated.</p>-->
+            <p>Adverse events of special interest (AESI) are pre-specified medically significant events that have the potential to be causally associated with a vaccine product. They must be carefully monitored and confirmed by further special studies. <abbr title="Adverse events of special interest">AESI</abbr> can be serious or non-serious and can include:</p>
+            <ul>
+                <li>events of interest due to their association with COVID-19 infection.</li>
+                <li>events of interest for vaccines in general (e.g. to the specific vaccine type or adjuvants).</li>
+            </ul>
+            <p>The list of <abbr title="Adverse events of special interest">AESI</abbr>s below takes into consideration the lists of <abbr title="Adverse events of special interest">AESI</abbr>s from these expert groups, manufacturers and regulatory authorities:</p>
+            <ul>
+                <li><a href="https://brightoncollaboration.us/covid-19/">Brighton Collaboration</a></li>
+                <li><a href="http://www.encepp.eu/encepp/openAttachment/fullProtocol/37296">Vaccine COVID-19 Monitoring Readiness protocol</a></li>
+            </ul>
+            <p>The <abbr title="Adverse events of special interest">AESI</abbr> list changes based on the evolving safety profile of vaccines. Although adverse events may occur after being vaccinated with a COVID-19 vaccine, they are not necessarily related to the vaccine. Health Canada and PHAC review the reports to determine whether the vaccine may have played a role.</p>
+            <p>Up to and including <span class="dateToShort"></span>, the most commonly reported <abbr title="Adverse events of special interest">AESI</abbr> was myocarditis/pericarditis (Table 1).</p>
+			<p id="table1Notes">To align with standard reporting practices, for AESIs with a Brighton Collaboration case definition (BCCD), only those meeting the BCCD level of certainty 1 to 3 are reported. BCCD level 4 AESIs (indicating not enough information to confirm the diagnosis) are not included in the number of reports and rate calculations for the table below.</p>
+			<div class="table-responsive">
+                <table id="AESITable" class="table table-striped table-hover table-bordered">
+				    <caption class="text-left"><span style="font-weight: bold;">Table 1. 
+				    <span class="nowrap"><select id="AESITable2-dropdown-measure" class="dropdown">
+				        <option value="count">Count</option>
+				        <option id="ratesOption" value="rate">Rate</option>
+				    </select></span> of reported adverse events of special interest by vaccine type (<span class="nowrap"><select id="AESITable-dropdown-measure" style="width: 250px;" class="dropdown">
+                        <option value="total-events">Total</option>
+                        <option value="pfizer-events">Pfizer-BioNTech Comirnaty</option>
+                        <option class="noRate" value="pfizer-bivalent-events">Pfizer-BioNTech Comirnaty Bivalent (Original/Omicron BA.4/BA.5)</option>
+                        <option value="moderna-events">Moderna Spikevax</option>
+                        <option class="noRate" value="moderna-bivalent-BA1-events">Moderna Spikevax (Original/OmicronBA.1) Bivalent</option>
+                        <option class="noRate" value="moderna-bivalent-BA.4/5-events">Moderna Spikevax (Original/OmicronBA.4/5) Bivalent</option>
+                        <option value="cov-azc-events">AstraZeneca Vaxzevria/COVISHIELD</option>
+                        <option class="noRate" id="janssenOption" value="janssen-events">Janssen JCOVDEN</option>
+                        <option class="noRate" id="novavaxOption" value="Novavax-events">Novavax Nuvaxovid</option>
+                        <option class="noRate" id="unspecifiedOption" value="unspecified-events">Unspecified</option>
+                    </select></span>) up to and including <span class="dateToShort">April 30, 2021</span> (n=<span class="totalAESI"></span>).</span></caption>
+					<thead>
+                        <tr id="tableHeader" class="bg-primary">
+                            <th scope="col" class="col-md-4"><abbr title="Adverse events of special interest">AESI</abbr> Category</th>
+                            <th scope="col" class="col-md-6"><abbr title="Adverse events of special interest">AESI</abbr></th>
+                            <th scope="col" class="header3Col">Total</th>
+                        </tr>
+					</thead>
+				</table>
+				<details>
+				    <summary>Notes</summary>
+				    <p><sup>1</sup> Includes adverse events meeting levels 1-3 of the <a href="https://brightoncollaboration.us/category/pubs-tools/case-definitions/.">Brighton Collaboration level of diagnostic certainty.</a></p>
+                    <p><sup>2</sup> COVID-19 vaccines that are currently authorized in Canada <b>cannot</b> cause an infection because they do <b>not</b> contain the live virus. While they are all highly effective at preventing severe COVID-19 illness and death, no vaccine is 100% effective, and some COVID-19 cases will still occur. For vaccines that have a two-dose regimen, protection begins 14 days after the first dose, and 7 to 14 days after the second dose.</p>
+                    <p><sup>3</sup> <a href="https://apps.who.int/iris/bitstream/handle/10665/342538/WHO-MHP-RPQ-PVG-2021.1-eng.pdf?sequence=1&isAllowed=y">WHO guidance on pregnancy related AESIs.</a></p>
+                    <p><b>Please note that 1 report represents 1 person and may contain information on more than 1 adverse event of special interest.
+                    </b></p>
+				</details>
+        </div>
+        <h3 id="detailedSafetySignals">Safety signals identified and other safety updates</h3>
+        <p>To date, 2 safety signals have been confirmed: Thrombosis with thrombocytopenia syndrome (TTS) and myocarditis/pericarditis. This is based on adverse events that were reported in Canada during the COVID-19 vaccination campaign, which followed their detection internationally. These reports do not imply a causal relationship between the vaccines and the adverse event. Health Canada updated the respective product monographs to include information about these adverse events. Health Canada PHAC will continue to monitor these events.</p>
+        <p>Guillian-Barré Syndrome (GBS) is no longer a safety signal. When the Brighton Collaboration Definition level 4 cases (indicating not enough information to confirm the diagnosis) are removed to align with standard reporting practices, the observed number of reports of GBS following vaccination with AstraZeneca Vaxzevria/COVISHIELD COVID-19 vaccine is not higher than would normally be expected in the general population.</p>
+        <details>
+			    <summary>Thrombosis with thrombocytopenia syndrome</summary>
+			    <ul>
+    			    <li><a href="https://brightoncollaboration.us/thrombosis-with-thrombocytopenia-syndrome-interim-case-definition/">Thrombosis with thrombocytopenia syndrome (TTS)</a> is characterized as blood clotting with low platelet levels. <a href="https://thrombosiscanada.ca/wp-uploads/uploads/2021/04/51.-Vaccine-induced-prothrobotic-immune-thrombcytopenia_26Apr21-Final.pdf">Vaccine-Induced Immune Thrombotic Thrombocytopenia (VITT), also known as Vaccine-Induced Prothrombotic Immune Thrombocytopenia (VIPIT)</a>, is characterized as <abbr title="Thrombosis with thrombocytopenia syndrome">TTS</abbr> that seems to be vaccine-induced due to the laboratory-confirmed presence of platelet factor (PF) 4 antibodies.</li>
+                    <li>Numbers and rates have been adjusted following medical review of the data.</li>
+                    <li>Up to and including <span style="font-weight: bold;" class="dateToShort">June 25, 2021</span>, there were <strong>103 reports of TTS that met level 1 to 3 of the <a href="https://brightoncollaboration.us/category/pubs-tools/case-definitions/">Brighton Collaboration level of diagnostic certainty</a></strong>. Of the <abbr title="Thrombosis with thrombocytopenia syndrome">TTS</abbr> reports:</li>
+                    <ul>
+                        <li>64 reports followed vaccination with the AstraZeneca Vaxzevria/COVISHIELD COVID-19 vaccine, 28 followed vaccination with the Pfizer-BioNTech Comirnaty COVID-19 vaccine, and 11 followed vaccination with the Moderna Spikevax COVID-19 vaccine</li>
+                    </ul>
+                    <li>Of the 64 TTS reports following the AstraZeneca Vaxzevria/COVISHIELD COVID-19 vaccine:</li>
+                    <ul>
+                        <li>symptoms started between 3 hours and 48 days after vaccination</li>
+                        <li>median age is 57 years (age range 34 to 88 years old)</li>
+                        <li>36 were males [median age 60 years (age range 34 to 78 years old)], and 28 were females [median age 55 years (age range 40 to 88 years old)]</li>
+                        <li>55 reports followed the first vaccine dose, and the dose number for 9 were not specified</li>
+                        <li>39 had laboratory results showing the presence of platelet factor (PF) 4 antibodies, indicating <a href="https://thrombosiscanada.ca/wp-uploads/uploads/2021/04/51.-Vaccine-induced-prothrobotic-immune-thrombcytopenia_26Apr21-Final.pdf">VITT (also known as VIPIT)</a></li>
+                        <li>6 people died
+                            <ul>
+                                <li>Preliminary causality assessment at the time of report resulted in a finding of <a href="#deaths">“indeterminate”</a>.</li>
+                                <li>Additional information was sought and these reports were referred for expert causality assessment, which is still ongoing.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+			</details>
+			<details>
+			    <summary>Myocarditis/pericarditis</summary>
+            <ul>
+                <li><a href="https://brightoncollaboration.us/myocarditi/s-case-definition-update/">Myocarditis</a> is inflammation of the heart muscle and pericarditis is inflammation of the lining around the heart.</li>
+                <li>Up to and including <span style="font-weight: bold;" class="dateToShort">June 25, 2021</span>, there were <strong>1,154 reports of myocarditis/pericarditis that met levels 1 to 3 of the <a href="https://brightoncollaboration.us/category/pubs-tools/case-definitions/">Brighton Collaboration level of diagnostic certainty</a></strong>. Of the myocarditis/pericarditis reports:</li>
+                <ul>
+                    <li>694 reports followed vaccination with the Pfizer-BioNTech Comirnaty COVID-19 vaccine, 435 followed vaccination with the Moderna Spikevax COVID-19 vaccine, 16 followed vaccination with the AstraZeneca Vaxzevria/COVISHIELD COVID-19 vaccine and the vaccine name for 9 were not specified</li>
+                    <li>the reporting rate of myocarditis/pericarditis following vaccination with Moderna Spikevax COVID-19 vaccine is higher than that of the Pfizer-BioNtech Comirnaty COVID-19 vaccine, for all ages and sexes combined</li>
+                </ul>
+                <li>Among the 694 reports of myocarditis/pericarditis following vaccination with the <strong>Pfizer-BioNTech Comirnaty COVID-19 vaccine</strong> (administered to those 5 years of age and older):</li>
+                <ul>
+                    <li>symptoms started between 1 minute and 155 days after vaccination</li>
+                    <li>median age is 24 years (age range 6 to 88 years old)</li>
+                    <li>453 were males [median age 21 years (age range 7 to 86 years old)], 223 were females [median age 36 years (age range 6 to 88 years old)], the sex of 1 was 'other', and the sex of 17 were not specified</li>
+                    <li>267 reports followed the first vaccine dose, 386 reports followed the second vaccine dose, 37 reports followed the third vaccine dose, 3 reports followed the fourth dose, and the dose number for 1 was not specified</li>
+                    <li>current analyses show the number of reports of myocarditis/pericarditis following the Pfizer-BioNTech Comirnaty COVID-19 vaccine is higher than what would be expected in the general population of males and females less than 30 years old and primarily following the second dose</li>
+                </ul>
+                <li>Among the 435 reports of myocarditis following vaccination with the <strong>Moderna Spikevax COVID-19 vaccine</strong> (administered to those 6 months of age and older):</li>
+                <ul>
+                    <li>symptoms started between 5 minutes and 113 days after vaccination</li>
+                    <li>median age is 28 years (age range 14 to 95 years old)</li>
+                    <li>327 were males [median age 27 years (age range 14 to 95 years old)], 99 were females [median age 35 years (age range 18 to 85)], the sex of 1 was 'other', and the sex of 8 were not specified</li>
+                    <li>85 reports followed the first vaccine dose, 316 reports followed the second vaccine dose, 29 reports followed the third dose, 4 reports followed the fourth dose, and the dose number for 1 was not specified</li>
+                    <li>current analyses show the number of reports of myocarditis/pericarditis following the Moderna Spikevax COVID-19 vaccine is higher than what would be expected in the general population, particularly among males and females less than 40 years old and following the second dose</li>
+                </ul>
+                <li>Evidence is evolving and investigations into the association between myocarditis/pericarditis and mRNA vaccines continue.</li>
+            </ul>
+			</details>
+            <details id="deaths">
+            <summary>Deaths</summary>
+            <ul>
+                <li>Up to and including <span style="font-weight: bold;" class="dateToShort">June 25, 2021</span>, a total of <strong>387 reports with an outcome of death were reported</strong> following vaccination. Although these deaths occurred after being vaccinated with a COVID-19 vaccine, they are not necessarily related to the vaccine. </li> 
+                <li>Medical case review previously used the <a href="https://who-umc.org/media/164200/who-umc-causality-assessment_new-logo.pdf">WHO-UMC causality assessment categories</a> to classify the status of death reports. Updated <a href="https://www.who.int/publications/i/item/9789241516990">WHO guidance on causality assessment specific to vaccinations</a> has been released. This updated user guide more accurately represents causality assessments following vaccination, so all reports with an outcome of death were updated and reclassified using the new classification system.</li>
+                <li>Of the 397 death reports, it was not possible to assess causality for 104 reports due to missing information (not enough information to initiate causality assessment).</li>
+                <li>Preliminary causality assessment was possible for the remaining 293 cases where there was sufficient information. Using the available information and the WHO guidance on causality assessment specific to vaccinations, we’ve determined that:</li>
+                <ul>
+                    <li>151 reports of death were unclassifiable due to lack of available information (not enough information to complete the preliminary assessment)</li>
+                    <li>98 reports of death were inconsistent with causal association to the vaccine (unlikely to be linked to the vaccine)</li>
+                    <li>44 reports of death were indeterminate (insufficient definitive evidence or conflicting evidence for causality)</li>
+                </ul>
+                <li>If additional information becomes available, cases will be re-assessed, and the causality assessment may be updated.</li>
+            </ul>
+            </details>
+            </div>
+        <h2 id="acknowledgements">Acknowledgements</h2>
+        <p>This monthly report would not be possible without the collaboration of federal, provincial and territorial public health partners as well as everyone taking part in the COVID-19 vaccination rollout in Canada.</p>
+		<p>We would also like to thank everyone who took the time to submit an adverse event report for their contribution to vaccine safety in Canada.</p>
+		<h2 id="citation">Suggested citation</h2>
+		<p>Public Health Agency of Canada. Canadian COVID-19 vaccination safety report. Ottawa: Public Health Agency of Canada; December 22, 2022. <a href="https://health-infobase.canada.ca/covid-19/vaccine-safety/">https://health-infobase.canada.ca/covid-19/vaccine-safety/</a></p>
+		<h2 id="a8">Related links</h2>
+		<ul>
+			<li><a href="https://www.canada.ca/en/public-health/services/immunization/canadian-adverse-events-following-immunization-surveillance-system-caefiss.html">Canadian Adverse Events Following Immunization and Surveillance System (CAEFISS)</a></li>
+			<li><a href="https://www.cps.ca/en/impact">Immunization Monitoring Program ACTive (IMPACT)</a></li>
+			<li><a href="https://canvas-covid.ca/">Canadian National Vaccine Safety Network (CANVAS)</a></li>
+			<li><a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/medeffect-canada/canada-vigilance-program.html">Canada Vigilance Program</a></li>
+			<li><a href="https://health-products.canada.ca/dpd-bdpp/index-eng.jsp">Drug Product Database</a></li>
+			<li><a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/covid19-industry/drugs-vaccines-treatments/authorization/list-drugs.html">Approved COVID-19 Vaccine list</a></li>
+			<li><a href="https://covid-vaccine.canada.ca/">COVID-19 vaccines and treatments portal</a></li>
+		    <li><a href="https://health-infobase.canada.ca/covid-19/vaccination-coverage/">COVID-19 vaccination in Canada</a></li>
+		</ul>
+
+		<div class="row row-no-gutters mrgn-tp-xl">
+        	<div class="col-sm-7 col-lg-6">
+            	<section class="gc-pg-hlpfl provisional">
+                	<div class="well mrgn-bttm-0">
+                    	<form id="gc-pg-hlpfl-frm" action="#" method="post" autocomplete="off">
+                        	<input type="hidden" name="institutionopt" value="Health Canada">
+                        	<input type="hidden" name="themeopt" value="Health">
+                        	<input type="hidden" name="sectionopt" value="Vaccines">
+							<input type="hidden" name="language" value="en">
+                        	<input type="hidden" name="pageTitle" value="COVID-19 vaccine safety">
+                        	<input type="hidden" name="submissionPage" value="https://health-infobase.canada.ca/covid-19/vaccine-safety/">
+							<input type="hidden" id="helpful" name="helpful" value="Yes">
+
+							<div class="gc-pg-hlpfl-btn">
+								<div class="row row-no-gutters">
+									<div class="col-xs-12 col-sm-7 mrgn-tp-sm">
+										<h2 class="mrgn-tp-sm h5">Did you find what you were looking for?</h2>
+									</div>
+									<div class="col-xs-8 col-sm-5 text-right">
+										<button id="btnyes" type="submit" value="Yes" class="btn btn-primary">Yes</button>
+										<button id="btnno" type="button" class="btn btn-primary mrgn-lft-sm nojs-hide">No</button>
+									</div>
+								</div>
+							</div>
+							<p class="h3 hidden nojs-show">If not, tell us why:</p>
+							<div class="gc-pg-hlpfl-no nojs-show">
+								<fieldset>
+									<legend class="h4 mrgn-tp-0 mrgn-bttm-md">What was wrong?</legend>
+									<div class="radio">
+										<label for="problem1">
+											<input name="problem" id="problem1" type="radio" value="The answer I need is missing" data-gc-analytics-wtph-value="The answer I need is missing-La réponse dont j’ai besoin n’est pas là" data-gc-analytics-collect="notPrivate">
+											The answer I need is missing
+										</label>
+									</div>
+									<div class="radio">
+										<label for="problem2">
+											<input name="problem" id="problem2" type="radio" value="The information isn’t clear" data-gc-analytics-wtph-value="The information isn’t clear-L'information n'est pas claire" data-gc-analytics-collect="notPrivate">
+											The information isn’t clear
+										</label>
+									</div>
+									<div class="radio">
+										<label for="problem3">
+											<input name="problem" id="problem3" type="radio" value="I’m not in the right place" data-gc-analytics-wtph-value="I’m not in the right place-Je ne suis pas au bon endroit" data-gc-analytics-collect="notPrivate">
+											I’m not in the right place
+										</label>
+									</div>
+									<div class="radio">
+										<label for="problem4">
+											<input name="problem" id="problem4" type="radio" value="Something is broken or incorrect" data-gc-analytics-wtph-value="Something is broken or incorrect-Quelque chose est brisé ou incorrect" data-gc-analytics-collect="notPrivate">
+											Something is broken or incorrect
+										</label>
+									</div>
+									<div class="radio">
+										<label for="problem5">
+											<input name="problem" id="problem5" type="radio" value="Other reason" data-gc-analytics-wtph-value="Other reason-Autre raison" data-gc-analytics-collect="notPrivate">
+											Other reason
+										</label>
+									</div>
+								</fieldset>
+								<label for="problem6" class="mrgn-bttm-0">Please provide more details</label>
+								<p class="small">
+									<strong>(Don’t include any personal information. Note that you will not receive a reply.)</strong>
+									<br>
+									<span class="small">Maximum 300 characters</span>
+								</p>
+								<textarea id="problem6" name="details" class="full-width" maxlength="300"></textarea>
+								<button type="submit" value="No" class="btn btn-primary mrgn-tp-md mrgn-bttm-sm">Submit</button>
+							</div>
+						</form>
+						<div class="gc-pg-hlpfl-thnk hide">
+							<p class="h6 mrgn-tp-sm mrgn-bttm-sm"><span class="far fa-check-circle text-success mrgn-rght-sm" aria-hidden="true"></span> Thank you for your feedback</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="col-sm-3 col-sm-offset-1 col-lg-offset-3">
+				<div class="wb-share" data-wb-share="{&quot;pnlId&quot;:&quot;pnlShrPg&quot;, &quot;lnkClass&quot;: &quot;btn btn-default btn-block mrgn-tp-md&quot;}"></div>
+			</div>
+		</div>
+    	
+        <div class="row pagedetails">
+            <div class="datemod col-xs-12 mrgn-tp-lg">
+                <dl id="wb-dtmd">
+                    <dt>Date modified: </dt>
+                    <dd><time class="dateModified" property="dateModified">2021-08-12</time></dd>
+                </dl>
+            </div>
+        </div>
+    </main>
+    <footer id="wb-info">
+        <div class="landscape">
+            <nav class="container wb-navcurr">
+                <h2 class="wb-inv">About government</h2>
+                <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+                    <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+                    <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+                    <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+                    <li><a href="https://www.canada.ca/en/news.html">News</a></li>
+                    <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+                    <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+                    <li><a href="https://pm.gc.ca/eng">Prime Minister</a></li>
+                    <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+                    <li><a href="https://open.canada.ca/en/">Open government</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="brand">
+            <div class="container">
+                <div class="row">
+                    <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+                        <h2 class="wb-inv">About this site</h2>
+                        <ul>
+                            <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+                            <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+                            <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+                            <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+                            <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+                        </ul>
+                    </nav>
+                    <div class="col-xs-6 visible-sm visible-xs tofpg">
+                        <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+                        <img src="/src/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/src/js/polyfills/polyfillPromise1.min.js"></script>
+    <script src="/src/js/polyfills/polyfillPromise2.min.js"></script>
+    <script src="/src/js/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/src/wet-boew/js/wet-boew.min.js"></script>
+    <script src="/src/GCWeb/js/theme.min.js"></script>
+    <script src="/src/js/bootstrap.js"></script>
+    <script src="/src/js/d3.v5.min.js"></script>
+    <script src="/src/js/polylabel.js"></script>
+    <script src="/src/js/d3-array.v2.min.js"></script>
+    <script src="/src/js/vaccine-safety/vaccine.js"></script>
+    <script src="/src/js/survey.js"></script>
+	<script>
+       $(document).on("wb-ready.wb", function() {
+           $("#btnno").click(function(e) {
+               $(".gc-pg-hlpfl-no").removeClass("nojs-show");
+               $(".gc-pg-hlpfl-btn").addClass("hide");
+               $("#helpful").val("No");
+           });
+           $("#gc-pg-hlpfl-frm").submit(function(e) {
+               e.preventDefault();
+               $(".gc-pg-hlpfl-thnk").removeClass("hide");
+               $("#gc-pg-hlpfl-frm").addClass("hide nojs-show");
+               $.ajax({
+                   url: 'https://pagesuccessemailqueue.azurewebsites.net/api/QueueProblemForm',
+                   type: 'POST',
+                   dataType: 'text',
+                   data: $('form#gc-pg-hlpfl-frm').serialize(),
+                   success: function(data) {},
+                   error: function(xhr, status, err) {
+                       console.log(xhr.responseText);
+                   }
+               });
+           });
+       });
+   </script>
+   <script>
+    function DisplayInfo() {
+        if (document.getElementById('moreinfo').style.display == "none"){
+            document.getElementById("moreinfo").style.display = "block";
+        } else {
+            document.getElementById("moreinfo").style.display = "none"; 
+        }
+        
+    }
+   </script>
+
+</body>
+</html>
